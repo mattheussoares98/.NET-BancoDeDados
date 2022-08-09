@@ -1,5 +1,5 @@
 ﻿namespace BancoDeDados {
-    partial class Form1 {
+    partial class CommandsForm {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -51,7 +51,7 @@
             this.Nome,
             this.Email});
             this.dataGridView1.Location = new System.Drawing.Point(16, 254);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(647, 286);
             this.dataGridView1.TabIndex = 0;
@@ -74,7 +74,7 @@
             // buttonConectar
             // 
             this.buttonConectar.Location = new System.Drawing.Point(671, 242);
-            this.buttonConectar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonConectar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonConectar.Name = "buttonConectar";
             this.buttonConectar.Size = new System.Drawing.Size(236, 43);
             this.buttonConectar.TabIndex = 1;
@@ -116,7 +116,7 @@
             // 
             this.textBoxNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNome.Location = new System.Drawing.Point(165, 129);
-            this.textBoxNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxNome.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.Size = new System.Drawing.Size(495, 38);
             this.textBoxNome.TabIndex = 5;
@@ -125,7 +125,7 @@
             // 
             this.textBoxEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxEmail.Location = new System.Drawing.Point(165, 188);
-            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(496, 38);
             this.textBoxEmail.TabIndex = 6;
@@ -133,17 +133,18 @@
             // buttonCriarTabela
             // 
             this.buttonCriarTabela.Location = new System.Drawing.Point(669, 293);
-            this.buttonCriarTabela.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonCriarTabela.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCriarTabela.Name = "buttonCriarTabela";
             this.buttonCriarTabela.Size = new System.Drawing.Size(236, 43);
             this.buttonCriarTabela.TabIndex = 7;
             this.buttonCriarTabela.Text = "Criar tabela";
             this.buttonCriarTabela.UseVisualStyleBackColor = true;
+            this.buttonCriarTabela.Click += new System.EventHandler(this.buttonCriarTabela_Click);
             // 
             // buttonInserir
             // 
             this.buttonInserir.Location = new System.Drawing.Point(671, 343);
-            this.buttonInserir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonInserir.Margin = new System.Windows.Forms.Padding(4);
             this.buttonInserir.Name = "buttonInserir";
             this.buttonInserir.Size = new System.Drawing.Size(236, 43);
             this.buttonInserir.TabIndex = 8;
@@ -153,7 +154,7 @@
             // buttonPesquisar
             // 
             this.buttonPesquisar.Location = new System.Drawing.Point(671, 394);
-            this.buttonPesquisar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonPesquisar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonPesquisar.Name = "buttonPesquisar";
             this.buttonPesquisar.Size = new System.Drawing.Size(236, 43);
             this.buttonPesquisar.TabIndex = 9;
@@ -163,7 +164,7 @@
             // buttonExcluir
             // 
             this.buttonExcluir.Location = new System.Drawing.Point(671, 444);
-            this.buttonExcluir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonExcluir.Margin = new System.Windows.Forms.Padding(4);
             this.buttonExcluir.Name = "buttonExcluir";
             this.buttonExcluir.Size = new System.Drawing.Size(236, 43);
             this.buttonExcluir.TabIndex = 10;
@@ -173,14 +174,14 @@
             // buttonEditar
             // 
             this.buttonEditar.Location = new System.Drawing.Point(671, 495);
-            this.buttonEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonEditar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonEditar.Name = "buttonEditar";
             this.buttonEditar.Size = new System.Drawing.Size(236, 43);
             this.buttonEditar.TabIndex = 11;
             this.buttonEditar.Text = "Editar";
             this.buttonEditar.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // CommandsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -197,8 +198,8 @@
             this.Controls.Add(this.labelResultado);
             this.Controls.Add(this.buttonConectar);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "CommandsForm";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -213,7 +214,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.Button buttonConectar;
-        private System.Windows.Forms.Label labelResultado;
         private System.Windows.Forms.Label labelNome;
         private System.Windows.Forms.Label labelEmail;
         private System.Windows.Forms.TextBox textBoxNome;
@@ -223,6 +223,7 @@
         private System.Windows.Forms.Button buttonPesquisar;
         private System.Windows.Forms.Button buttonExcluir;
         private System.Windows.Forms.Button buttonEditar;
+        internal System.Windows.Forms.Label labelResultado;
     }
 }
 
